@@ -1,0 +1,80 @@
+<div class="text-center mt-3">
+  <h1 class="h1 fw-bold mb-0">Registro</h1>
+  <span>Antes de registrar a tu mascota, es necesario que crees una cuenta para operar en la plataforma</span>
+</div>
+<hr>
+
+<div class="container h-100" *ngIf="step == 1" >
+  <div class="row d-flex justify-content-center align-items-center h-100">
+    <div class="col-6">
+
+      <div class="card" style="border-radius: 1rem;">
+        <div class="row">
+          <div class="d-flex align-items-center m-3 pb-1">
+            <span class="h1 fw-bold mb-0">Creá un usuario y contraseña</span>
+          </div>
+          <div class="col-6">
+            <div class="card-body text-black">
+
+              <form>
+                <div class="form-outline mb-4">
+                  <input type="text" id="form2Example17" class="form-control form-control-lg" />
+                  <label class="form-label" for="form2Example17">Usuario</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="password" id="form2Example27" class="form-control form-control-lg" />
+                  <label class="form-label" for="form2Example27">Contraseña</label>
+                </div>
+
+                <div class="form-outline">
+                  <input type="password" id="form2Example27" class="form-control form-control-lg" />
+                  <label class="form-label" for="form2Example27">Reingresá la contraseña</label>
+                </div>
+              </form>
+
+            </div>
+          </div>
+          <div class="col-6"> </div>
+        </div>
+        <div class="row">
+          <span class="spacer">
+            <button class="btn btn-dark btn-lg m-2" type="button" (click)="nexStep()">Siguiente</button>
+          </span>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="container h-100" *ngIf="step == 2">
+  <div class="row d-flex justify-content-center align-items-center h-100">
+    <div class="col-6">
+
+      <div class="card" style="border-radius: 1rem;">
+          <div class="row">
+            <div class="d-flex align-items-center m-3 pb-1">
+              <span class="h1 fw-bold mb-0">Ingresá tus datos personales</span>
+            </div>
+            <div class="col-6">
+              <div class="card-body text-black">
+
+                <app-datos-personales></app-datos-personales>
+
+              </div>
+            </div>
+            <div class="col-6"> </div>
+          </div>
+          <div class="row">
+            <div class="col">
+                <button class="btn btn-primary btn-lg m-2" type="button" (click)="previusStep()">Atrás</button>
+            </div>
+            <div class="col spacer">
+                <button class="btn btn-dark btn-lg  m-2" type="button">Confirmar</button>
+            </div>
+          </div>
+
+    </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+<form>
+  <div class="form-outline mb-4">
+    <input type="email" id="form2Example17" class="form-control form-control-lg"/>
+    <label class="form-label" for="form2Example17">Nombre y apellido</label>
+  </div>
+
+  <div class="form-outline mb-4">
+    <input id="dateOfIncorporation"
+    class="form-control"
+    readonly
+    name="date" ngbDatepicker #d="ngbDatepicker"
+    autocomplete="off"
+    (click)="d.toggle()">
+    <label class="form-label" for="form2Example27">Fecha de nacimiento</label>
+  </div>
+
+  <div class="input-group ">
+    <input type="text" class="form-control form-control-lg" mask="separator" thousandSeparator=".">
+    <div class="input-group-append">
+        <select class="custom-select m-2" name="" id="">
+          <option>DNI</option>
+          <option>LC</option>
+          <option>LE</option>
+          <option>LI</option>
+        </select>
+    </div>
+  </div>
+  <label class="form-label mb-4">Identificación</label>
+
+  <div class="form-outline mb-4">
+    <input type="text" id="form2Example27" class="form-control form-control-lg" />
+    <label class="form-label" for="form2Example27">Dirección</label>
+  </div>
+
+  <div class="form-outline mb-4">
+    <input type="text" id="form2Example27" class="form-control form-control-lg" mask="0000000000" />
+    <label class="form-label" for="form2Example27">Teléfono</label>
+  </div>
+
+  <div class="form-outline mb-4">
+    <input type="email" id="form2Example27" class="form-control form-control-lg" />
+    <label class="form-label" for="form2Example27">Email</label>
+  </div>
+
+</form>
